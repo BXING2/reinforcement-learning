@@ -18,6 +18,8 @@ The model is BERT (Bidirectional Encoder Representations from Transformers) Base
 
 **Figure 2. Average return and number of steps during testing.**
 
+[![Video Title]()](https://github.com/BXING2/reinforcement-learning/blob/main/UniAgent/figures/video_40.mp4)
+
 <video src="https://github.com/BXING2/reinforcement-learning/blob/main/UniAgent/figures/video_40.mp4"></video>
 
 Through finetuning, the model achieves an accuracy of 90.5% on the test dataset. From the confusion matrix in Table 2, the model exhibits similar performance on detecting positive and negative reviews on this balanced dataset
