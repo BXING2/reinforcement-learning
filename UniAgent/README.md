@@ -10,7 +10,9 @@ Dataset Link: https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentime
 The model is BERT (Bidirectional Encoder Representations from Transformers) Base model with a sequence classification head (BertForSequenceClassification) from HuggingFace. The model consists of the embedding layer, 12 encoder layers, and classification layer. The weights of the 11th encoder layer (index start from 0) and the classification layer are finetuned for 20 epoches, with all other model parameters frozen.
 
 ## Evaluation
-<img src="figures/train_return.png" height="300" /> <img src="figures/train_step_count.png" height="300" />
+| Train Return | Test Return |
+|---|---|
+| <img src="figures/train_return.png" height="300" /> | <img src="figures/train_step_count.png" height="300" /> |
 
 **Figure 1. Average return and number of steps during training.**
 
