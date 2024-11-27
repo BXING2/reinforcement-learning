@@ -19,7 +19,7 @@ The model is BERT (Bidirectional Encoder Representations from Transformers) Base
 **Figure 2. Average return and number of steps during testing.**
 
 
-<video src="https://github.com/user-attachments/assets/5774f724-26c2-416f-82bc-0e728f770125" height="300"> <video src="https://github.com/user-attachments/assets/819be0f8-5c3c-4104-b463-e6a56da8c6de" height="300">
+<video src="https://github.com/user-attachments/assets/5774f724-26c2-416f-82bc-0e728f770125" height="300"> <video src="https://github.com/user-attachments/assets/819be0f8-5c3c-4104-b463-e6a56da8c6de" height="300"></video>
 
 Through finetuning, the model achieves an accuracy of 90.5% on the test dataset. From the confusion matrix in Table 2, the model exhibits similar performance on detecting positive and negative reviews on this balanced dataset
 
