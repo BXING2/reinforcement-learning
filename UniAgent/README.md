@@ -18,7 +18,7 @@ The model is BERT (Bidirectional Encoder Representations from Transformers) Base
 
 **Figure 2. Average return and number of steps during testing.**
 
-[![Video Title]()](https://github.com/BXING2/reinforcement-learning/blob/main/UniAgent/figures/video_40.mp4)
+[![Video Title](figures/test_return.png)](https://github.com/BXING2/reinforcement-learning/blob/main/UniAgent/figures/video_40.mp4)
 
 <video src="https://github.com/BXING2/reinforcement-learning/blob/main/UniAgent/figures/video_40.mp4"></video>
 
