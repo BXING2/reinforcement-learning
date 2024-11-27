@@ -12,7 +12,7 @@ The model is BERT (Bidirectional Encoder Representations from Transformers) Base
 ## Evaluation
 | Train Return | Test Return |
 |---|---|
-| <img src="figures/train_return.png" height="300" /> | <img src="figures/train_step_count.png" height="300" /> |
+| <img src="figures/train_return.png" height="400" /> | <img src="figures/train_step_count.png" height="400" /> |
 
 **Figure 1. Average return and number of steps during training.**
 
