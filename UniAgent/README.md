@@ -18,6 +18,7 @@ The model is BERT (Bidirectional Encoder Representations from Transformers) Base
 
 **Figure 2. Average return and number of steps during testing.**
 
+| 40 iterations | 90 iterations |
 |---|---|
 |<video src="https://github.com/user-attachments/assets/5774f724-26c2-416f-82bc-0e728f770125" height="200"></video> | <video src="https://github.com/user-attachments/assets/819be0f8-5c3c-4104-b463-e6a56da8c6de" height="200"></video> |
 
