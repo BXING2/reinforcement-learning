@@ -1,15 +1,15 @@
 ## General
-This example demonstrates training uni-agent system using reinforcement learning algorithms. 
+This example demonstrates training multi-agent systems using reinforcement learning algorithms. 
 
 ## Dataset
-The simulation environment is Inverted Double Pendulum of gymnasium from OpenAI. The observations are 9 dimensional which consider the cart position/velocity, cart-pole angle/angle velocity, pole-pole angle/angle velocity, etc. The actions are 1 dimensional which consider the force applied on the cart. The reward consists of three parts: (1) alive bonus accounts for how long the system survives, (2) distance penalty accounts for the penalty from the second pendulum movements, (3) velocity penalty accounts for the penalty from large angular velocities. 
+The simulation environment is Navigation of VMAS (VectorizedMultiAgentSimulator). The observations are 18 dimensional which consider the agent position/velocity, the relative agent position with respect to its goal, 12 LiDAR readings. The actions are 2 dimensional which consider the force applied on the agent. The reward consists of three parts: (1) agent reward accounts for the difference between agent-goal distances at two consecutive steps, (2) collision penalty accounts for the penalty from collisions, (3) final reward accounts a reward when all agents reach their own goals. 
 
-The agent is trained for 100 iterations, each of which considers 1000 frames. Thus, 100K frames are used totally.
+The agent is trained for 100 iterations, each of which considers 6K frames. Thus, 600K frames are used totally.
 
-Simulation Environment Link: https://gymnasium.farama.org/index.html
+Simulation Environment Link: https://github.com/proroklab/VectorizedMultiAgentSimulator/
 
 ## Model
-The model is PPO (Proximal Policy Optimization) which belongs to policy gradient algorithm. It consists of an actor model and critic model. The actor model approximates a policy function for generating the action distributions. The critic model approximates a value function for evaluating the goodness of the selected action given the state. The model is optimized on the clipped surrogate objective function to avoid rapid updates on the parameters. For each iteration, a number of trajectories (a sequence of states and actions) are generated based on the current policy. Using quantities including action probalities, advantages, predicted values and returns, the policy and value model parameters are optimized. The updated policy is used again to generate new trajectories for the optimizetion at the next iteration.
+The model is MAPPO (Multi-Agent Proximal Policy Optimization) which applies PPO algorithm to the multi-agent systems. Compared with the PPO used in uni-agent system, the MAPPO adopts the idea of centralised training and decentralised execution for training the multi-agent systems. Centralised training means the critic model takes the global observation, or the concentation of local observations from all agents, as inputs for evalating the godness of selected actions. Meanwhile, decentralised execution means the actor model takes the local observation to generate action distribution for each agent. As a comparison, if the critic model also ultilize local observation, instead of global observation, the model turns into IPPO (Independent Proximal Policy Optimization). 
 
 ## Evaluation
 | Train Return | Train Step Count |
@@ -24,14 +24,6 @@ The model is PPO (Proximal Policy Optimization) which belongs to policy gradient
 
 **Figure 2. Average return and number of steps during testing.**
 
-
-
-
-
-
-
-
-
 | 10 Iterations | 80 Iterations |
 |---|---|
 |<video src="https://github.com/user-attachments/assets/53156727-d4d4-477c-99cd-f6be7400372e" height="200"></video> | <video src="https://github.com/user-attachments/assets/7f70c71f-e12a-43f2-b536-6cd3ab96dbc2" height="200"></video> |
@@ -44,5 +36,5 @@ The Video 1 shows two videos recording the movements of the inverted double pend
 
 ## Reference
 1. https://gymnasium.farama.org/index.html
-2. Schulman, John, et al. "Proximal policy optimization algorithms." arXiv preprint arXiv:1707.06347 (2017).
+2. Yu, Chao, et al. "The surprising effectiveness of ppo in cooperative multi-agent games." Advances in Neural Information Processing Systems 35 (2022): 24611-24624..
 3. https://pytorch.org/tutorials/intermediate/reinforcement_ppo.html
