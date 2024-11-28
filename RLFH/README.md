@@ -40,13 +40,18 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 <img src="figures/train_reward.png" width="500" />
 
-**Figure 1. Rewards on the train dataset during training.**
+**Figure 1. Average rewards on the train dataset during training.**
 
 | SFT Model | RL Model |
 |---|---|
 | <img src="figures/test_reward_before.png" /> | <img src="figures/test_reward_after.png" /> |
 
-**Figure 1. Rewards on the train dataset during training.**
+**Figure 2. Rewards on the test dataset from SFT model (left) and RL model (right).**
+
+<img src="figures/test_reward_map.png" width="500" />
+
+**Figure 3. Reward map for SFT and RL model.**
+
 
 | | Accuracy | Precison | Recall | F1 | 
 | --- | --- | --- | --- | --- |
