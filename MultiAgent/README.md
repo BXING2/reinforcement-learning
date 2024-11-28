@@ -2,7 +2,7 @@
 This example demonstrates training multi-agent systems using reinforcement learning algorithms. 
 
 ## Dataset
-The simulation environment is Navigation of VMAS (VectorizedMultiAgentSimulator). The observations are 18 dimensional which consider the agent position/velocity, the relative agent position with respect to its goal, 12 LiDAR readings. The actions are 2 dimensional which consider the force applied on the agent. The reward consists of three parts: (1) agent reward accounts for the difference between agent-goal distances at two consecutive steps, (2) collision penalty accounts for the penalty from collisions, (3) final reward accounts a reward when all agents reach their own goals. 
+The simulation environment is Navigation of VMAS (VectorizedMultiAgentSimulator). The observations are 18 dimensional which consider the agent position/velocity, the relative agent position with respect to its goal, 12 LiDAR readings. The actions are 2 dimensional which consider the force applied on the agent. The reward consists of three parts: (1) agent reward accounts for the difference between agent-goal distances at two consecutive steps, (2) collision penalty accounts for the penalty from collisions, (3) final reward accounts for a reward obtained when all agents reach their own goals. 
 
 The agent is trained for 100 iterations, each of which considers 6K frames. Thus, 600K frames are used totally.
 
