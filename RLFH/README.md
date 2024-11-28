@@ -7,7 +7,7 @@ The original dataset has around 40K movie reviews with positive and negative rev
 Dataset Link: https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentiment-analysis
 
 ## Model
-Finetuning language models via RLFH (Reinforcement Learning from Human Feedback) mainly consists of three steps, including supervised finetuning, reward modeling training and reinforcement learning from human feedback finetuning.
+Finetuning language models via RLFH (Reinforcement Learning from Human Feedback) mainly consists of three steps, including supervised finetuning, reward model training and reinforcement learning from human feedback finetuning.
 
 Step 1: supervised finetuning <br/>
 
