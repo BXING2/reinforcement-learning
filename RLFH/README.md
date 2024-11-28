@@ -36,9 +36,9 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 | | Loss | Perplexity |
 | --- | --- | --- |
-| Train | 0.955 | 0.955 |
-| Validation | 0.878 | 0.877 |
-| Test | 0.905 | 0.905 |
+| Train | 3.233 | 25.358 |
+| Validation | 3.536 | 34.343 |
+| Test | 3.507 | 33.362 |
 
 **Table 1. Loss and perplexity on train/validation/test dataset.**
 
