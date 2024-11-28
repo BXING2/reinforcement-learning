@@ -38,7 +38,7 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 ### Reinforcement learning from human feedback
 
-<img src="figures/train_reward.png" width="400" />
+<img src="figures/train_reward.png" width="500" />
 
 **Figure 1. Rewards on the train dataset during training.**
 
