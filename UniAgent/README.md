@@ -30,8 +30,11 @@ The model is PPO (Proximal Policy Optimization) which belongs to policy gradient
 
 **Video 1. Movements of inverted double pendulum from models after training for 40 iterations (left) and 90 iterations (right).**
 
-Through finetuning, the model achieves an accuracy of 90.5% on the test dataset. From the confusion matrix in Table 2, the model exhibits similar performance on detecting positive and negative reviews on this balanced dataset
+Figure 1,2 shows the average return and number of steps during training and testing stages. During training, the actor model is saved every 10 iterations. During testing, each saved model is used to generated 100 trajectories, each of which has at most 1000 steps. The average return and number of steps are shown in Figure 2 for various checkpoints, indicating the improved model performance with the increasing of training iterations. 
+
+The Video 1 shows two videos recording the movements of the inverted double pendulum from the model trained for 40 and 90 iterations, respectively. After training for 40 iterations (left video), the double pendulum can maintain stable within few steps but eventaully fails. However, after training for 90 iterations (right video), the double pendulum keeps stable during the 1000 steps applied.
 
 ## Reference
-1. https://huggingface.co/docs/transformers/en/model_doc/bert
-2. Kenton, Jacob Devlin Ming-Wei Chang, and Lee Kristina Toutanova. "Bert: Pre-training of deep bidirectional transformers for language understanding." Proceedings of naacL-HLT. Vol. 1. 2019.
+1. https://gymnasium.farama.org/index.html
+2. Schulman, John, et al. "Proximal policy optimization algorithms." arXiv preprint arXiv:1707.06347 (2017).
+3. https://pytorch.org/tutorials/intermediate/reinforcement_ppo.html
