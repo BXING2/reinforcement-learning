@@ -26,6 +26,8 @@ The model is BERT (Bidirectional Encoder Representations from Transformers) Base
 |---|---|
 |<video src="https://github.com/user-attachments/assets/5774f724-26c2-416f-82bc-0e728f770125" height="200"></video> | <video src="https://github.com/user-attachments/assets/819be0f8-5c3c-4104-b463-e6a56da8c6de" height="200"></video> |
 
+Video 1. Movements of inverted double pendulum from models after training for 40 iterations (left) and 90 iterations (right).
+
 Through finetuning, the model achieves an accuracy of 90.5% on the test dataset. From the confusion matrix in Table 2, the model exhibits similar performance on detecting positive and negative reviews on this balanced dataset
 
 ## Reference
