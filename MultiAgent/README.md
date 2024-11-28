@@ -32,7 +32,7 @@ The model is MAPPO (Multi-Agent Proximal Policy Optimization) which applies PPO 
 
 Figure 1,2 shows the average return and number of steps during training and testing stages. During training, the actor model is saved every 10 iterations. During testing, each saved model is used to generated 100 trajectories, each of which has at most 100 steps. The average returns and number of steps are shown in Figure 2 for various checkpoints, indicating the enhanced model performance with the increasing of training iterations. 
 
-The Video 1 shows two videos recording the movements of the inverted double pendulum from the model trained for 10 and 80 iterations, respectively. After training for 10 iterations (left video), the double pendulum can maintain stable within few steps but eventaully fails. However, after training for 90 iterations (right video), the double pendulum keeps stable during the 1000 steps applied.
+The Video 1 shows two videos recording the movements of the inverted double pendulum from the model trained for 10 and 80 iterations, respectively. After training for 10 iterations (left video), the orange and green agents get stuck and fail to reach their goals. After training for 80 iterations (right video), all agents successfully find their goals within 100 steps.
 
 ## Reference
 1. https://gymnasium.farama.org/index.html
