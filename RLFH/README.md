@@ -31,6 +31,13 @@ This step focus on further finetuning the model from step 1 according to the rew
 
 
 ## Evaluation
+
+### Supervised finetuning
+
+### Reward model training
+
+### Reinforcement learning from human feedback
+
 <img src="figures/train_valid_loss.png" height="300" /> <img src="figures/train_valid_acc.png" height="300" />
 
 **Figure 1. Loss and accuracy on the train and valiation dataset during training.**
