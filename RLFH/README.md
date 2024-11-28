@@ -48,7 +48,7 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 **Figure 2. Rewards on the test dataset from SFT model (left) and RL model (right).**
 
-<img src="figures/reward_map.png" width="500"/>
+<img src="figures/map.png" width="500"/>
 
 **Figure 3. Reward map for SFT and RL model.**
 
