@@ -9,7 +9,7 @@ The agent is trained for 100 iterations, each of which considers 1000 frames. Th
 Simulation Environment Link: https://gymnasium.farama.org/index.html
 
 ## Model
-The model is PPO (Proximal Policy Optimization) which is a policy gradient algorithm. 
+The model is PPO (Proximal Policy Optimization) which belongs to policy gradient algorithm. It consists of an actor model and critic model. The actor model approximates a policy function for generating the action distributions. The critic model approximates a value function for evaluating the goodness of the selected action given the state. The model is optimized on the clipped surrogate objective function to avoid a repid update on the parameters. For each iteration, a number of trajectories (a sequence of states and actions) are generated based on the current policy. Using the quantities including action probalities, advantages, predicted value and returns, the policy and value model parameters are optimized. For the next iteration, new trajectories are generated based on the updated policies.
 
 ## Evaluation
 | Train Return | Train Step Count |
