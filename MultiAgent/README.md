@@ -24,9 +24,17 @@ The model is PPO (Proximal Policy Optimization) which belongs to policy gradient
 
 **Figure 2. Average return and number of steps during testing.**
 
-| 40 Iterations | 90 Iterations |
+
+
+
+
+
+
+
+
+| 10 Iterations | 80 Iterations |
 |---|---|
-|<video src="https://github.com/user-attachments/assets/5774f724-26c2-416f-82bc-0e728f770125" height="200"></video> | <video src="https://github.com/user-attachments/assets/819be0f8-5c3c-4104-b463-e6a56da8c6de" height="200"></video> |
+|<video src="https://github.com/user-attachments/assets/53156727-d4d4-477c-99cd-f6be7400372e" height="200"></video> | <video src="https://github.com/user-attachments/assets/7f70c71f-e12a-43f2-b536-6cd3ab96dbc2" height="200"></video> |
 
 **Video 1. Movements of inverted double pendulum from models after training for 40 iterations (left) and 90 iterations (right).**
 
