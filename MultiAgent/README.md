@@ -36,5 +36,6 @@ The Video 1 shows two videos recording the movements of the inverted double pend
 
 ## Reference
 1. https://gymnasium.farama.org/index.html
-2. Yu, Chao, et al. "The surprising effectiveness of ppo in cooperative multi-agent games." Advances in Neural Information Processing Systems 35 (2022): 24611-24624..
-3. https://pytorch.org/tutorials/intermediate/reinforcement_ppo.html
+2. Schulman, John, et al. "Proximal policy optimization algorithms." arXiv preprint arXiv:1707.06347 (2017).
+3. Yu, Chao, et al. "The surprising effectiveness of ppo in cooperative multi-agent games." Advances in Neural Information Processing Systems 35 (2022): 24611-24624..
+4. https://pytorch.org/tutorials/intermediate/reinforcement_ppo.html
