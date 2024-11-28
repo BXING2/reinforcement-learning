@@ -10,6 +10,7 @@ Dataset Link: https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentime
 Finetuning language models via RLFH (Reinforcement Learning from Human Feedback) mainly consists of three steps, including supervised finetuning, reward modeling training and reinforcement learning from human feedback finetuning.
 
 Step 1: supervised finetuning <br/>
+
 This step focus on finetuning a pretrained model for language modeling on the dataset we are interested in. The language model here is GPT2 (Generative Pre-Training) Small model with a language modeling head (GPT2LMHeadModel) from Hugging Face. The model consists of the embedding layer, 12 decoder layers. The weights of the 10th and 11th decoder layers (index starting from 0) are finetuned for 10 epoches, with all other model parameters frozen.
 
 > Model input: {Prompt}; Model output: {Response}
