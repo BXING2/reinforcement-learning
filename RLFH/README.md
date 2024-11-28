@@ -50,14 +50,14 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 | Validation | 0.899 | 0.899 | 0.899 | 0.899 |
 | Test | 0.912 | 0.912 | 0.912 | 0.912 |
 
-**Table 1. Summary of various metrics on train/validation/test dataset.**
+**Table 2. Summary of various metrics on train/validation/test dataset.**
 
 | | 0 | 1 |
 | --- | --- | --- |
 | 0 | 429 | 41 |
 | 1 | 47 | 483 |
 
-**Table 2. Confusion matrix on test dataset. 1 and 0 represents the positive and negative reviews, respectively.**
+**Table 3. Confusion matrix on test dataset. 1 and 0 represents the positive and negative reviews, respectively.**
 
 ### Reinforcement learning from human feedback
  
