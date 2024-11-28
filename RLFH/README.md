@@ -38,9 +38,15 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 ### Reinforcement learning from human feedback
 
-<img src="figures/train_valid_loss.png" height="300" /> <img src="figures/train_valid_acc.png" height="300" />
+<img src="figures/train_reward.png" height="300" />
 
-**Figure 1. Loss and accuracy on the train and valiation dataset during training.**
+**Figure 1. Rewards on the train dataset during training.**
+
+| SFT Model | RL Model |
+|---|---|
+| <img src="figures/test_reward_before.png" height="300" /> | <img src="figures/test_reward_after.png" height="300" /> |
+
+**Figure 1. Rewards on the train dataset during training.**
 
 | | Accuracy | Precison | Recall | F1 | 
 | --- | --- | --- | --- | --- |
