@@ -4,7 +4,9 @@ This example demonstrates training uni-agent system using reinforcement learning
 ## Dataset
 The simulation environment is Inverted Double Pendulum of gymnasium from OpenAI. The observations are 9 dimensional which consider the cart position/velocity, cart-pole angle/angle velocity, pole-pole angle/angle velocity, etc. The actions are 1 dimensional which consider the force applied on the cart. The reward consists of three parts: (1) alive bonus accounts for how long the system survives, (2) distance penalty accounts for the penalty from the second pendulum movements, (3) velocity penalty accounts for the penalty from large angular velocities. 
 
-Dataset Link: https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentiment-analysis
+The agent is trained for 100 iterations, each of which considers 1000 frames. Thus, 100K frames are used totally.
+
+Simulation Environment Link: https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentiment-analysis
 
 ## Model
 The model is BERT (Bidirectional Encoder Representations from Transformers) Base model with a sequence classification head (BertForSequenceClassification) from HuggingFace. The model consists of the embedding layer, 12 encoder layers, and classification layer. The weights of the 11th encoder layer (index start from 0) and the classification layer are finetuned for 20 epoches, with all other model parameters frozen.
