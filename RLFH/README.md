@@ -46,16 +46,16 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 | | Accuracy | Precison | Recall | F1 | 
 | --- | --- | --- | --- | --- |
-| Train | 0.955 | 0.955 | 0.955 | 0.955 |
-| Validation | 0.878 | 0.877 | 0.876 | 0.877 |
-| Test | 0.905 | 0.905 | 0.905 | 0.905 |
+| Train | 0.941 | 0.941 | 0.941 | 0.941 |
+| Validation | 0.899 | 0.899 | 0.899 | 0.899 |
+| Test | 0.912 | 0.912 | 0.912 | 0.912 |
 
 **Table 1. Summary of various metrics on train/validation/test dataset.**
 
 | | 0 | 1 |
 | --- | --- | --- |
-| 0 | 179 | 21 |
-| 1 | 17 | 183 |
+| 0 | 429 | 41 |
+| 1 | 47 | 483 |
 
 **Table 2. Confusion matrix on test dataset. 1 and 0 represents the positive and negative reviews, respectively.**
 
