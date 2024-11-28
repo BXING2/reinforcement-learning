@@ -6,10 +6,10 @@ The simulation environment is Inverted Double Pendulum of gymnasium from OpenAI.
 
 The agent is trained for 100 iterations, each of which considers 1000 frames. Thus, 100K frames are used totally.
 
-Simulation Environment Link: https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentiment-analysis
+Simulation Environment Link: https://gymnasium.farama.org/index.html
 
 ## Model
-The model is BERT (Bidirectional Encoder Representations from Transformers) Base model with a sequence classification head (BertForSequenceClassification) from HuggingFace. The model consists of the embedding layer, 12 encoder layers, and classification layer. The weights of the 11th encoder layer (index start from 0) and the classification layer are finetuned for 20 epoches, with all other model parameters frozen.
+The model is PPO (Proximal Policy Optimization) which is a policy gradient algorithm. 
 
 ## Evaluation
 | Train Return | Train Step Count |
