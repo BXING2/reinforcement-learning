@@ -28,7 +28,7 @@ The model is MAPPO (Multi-Agent Proximal Policy Optimization) which applies PPO 
 |---|---|
 |<video src="https://github.com/user-attachments/assets/53156727-d4d4-477c-99cd-f6be7400372e" height="200"></video> | <video src="https://github.com/user-attachments/assets/7f70c71f-e12a-43f2-b536-6cd3ab96dbc2" height="200"></video> |
 
-**Video 1. Movements of inverted double pendulum from models after training for 40 iterations (left) and 90 iterations (right).**
+**Video 1. Navigation of four agents from models after training for 10 iterations (left) and 80 iterations (right).**
 
 Figure 1,2 shows the average return and number of steps during training and testing stages. During training, the actor model is saved every 10 iterations. During testing, each saved model is used to generated 100 trajectories, each of which has at most 1000 steps. The average returns and number of steps are shown in Figure 2 for various checkpoints, indicating the enhanced model performance with the increasing of training iterations. 
 
