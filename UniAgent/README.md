@@ -1,8 +1,8 @@
 ## General
-This example demonstrates funetuning BERT model for text classification tasks. 
+This example demonstrates training uni-agent system using reinforcement learning algorithms. 
 
 ## Dataset
-The original dataset has around 40K movie reviews with positive and negative reviews labeled as 1 and 0, respectively. In this example, 1K positive reviews and 1K negative reviews are sampled for finetuning the model. The dataset is splited into three parts, 60% for training, 20% for validation and 20% for testing. 
+The simulation environment is Inverted Double Pendulum of gymnasium from OpenAI. The observations are 9 dimensional which consider the cart position/velocity, cart-pole angle/angle velocity, pole-pole angle/angle velocity, etc. The actions are 1 dimensional which consider the force applied on the cart. The reward consists of three parts: (1) alive bonus accounts for how long the system survives, (2) distance penalty accounts for the penalty from the second pendulum movements, (3) velocity penalty accounts for the penalty from large angular velocities. 
 
 Dataset Link: https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentiment-analysis
 
@@ -26,7 +26,7 @@ The model is BERT (Bidirectional Encoder Representations from Transformers) Base
 |---|---|
 |<video src="https://github.com/user-attachments/assets/5774f724-26c2-416f-82bc-0e728f770125" height="200"></video> | <video src="https://github.com/user-attachments/assets/819be0f8-5c3c-4104-b463-e6a56da8c6de" height="200"></video> |
 
-Video 1. Movements of inverted double pendulum from models after training for 40 iterations (left) and 90 iterations (right).
+**Video 1. Movements of inverted double pendulum from models after training for 40 iterations (left) and 90 iterations (right).**
 
 Through finetuning, the model achieves an accuracy of 90.5% on the test dataset. From the confusion matrix in Table 2, the model exhibits similar performance on detecting positive and negative reviews on this balanced dataset
 
