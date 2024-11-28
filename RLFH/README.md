@@ -44,7 +44,7 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 | SFT Model | RL Model |
 |---|---|
-| <img src="figures/test_reward_before.png" height="300" /> | <img src="figures/test_reward_after.png" height="300" /> |
+| <img src="figures/test_reward_before.png" /> | <img src="figures/test_reward_after.png" /> |
 
 **Figure 1. Rewards on the train dataset during training.**
 
