@@ -93,3 +93,5 @@ Figure 3 shows the increasing average rewards during training, indicating prompt
 2. https://huggingface.co/docs/transformers/en/model_doc/gpt2
 3. https://huggingface.co/docs/trl/index
 4. Kenton, Jacob Devlin Ming-Wei Chang, and Lee Kristina Toutanova. "Bert: Pre-training of deep bidirectional transformers for language understanding." Proceedings of naacL-HLT. Vol. 1. 2019.
+5. Radford, Alec, et al. "Language models are unsupervised multitask learners." OpenAI blog 1.8 (2019): 9.
+6. Ouyang, Long, et al. "Training language models to follow instructions with human feedback." Advances in neural information processing systems 35 (2022): 27730-27744.
