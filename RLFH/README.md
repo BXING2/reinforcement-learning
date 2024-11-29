@@ -36,7 +36,7 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 <img src="figures/sft_loss.png" width="500" />
 
-**Figure 3. SFT model loss on the train and validation dataset during training.**
+**Figure 1. SFT model loss on the train and validation dataset during training.**
 
 | | Loss | Perplexity |
 | --- | --- | --- |
@@ -50,7 +50,7 @@ This step focus on further finetuning the model from step 1 (SFT model) accordin
 
 <img src="figures/rm_loss.png" width="500" />
 
-**Figure 3. Reward model loss on the train and validation dataset during training.**
+**Figure 2. Reward model loss on the train and validation dataset during training.**
 
 | | Accuracy | Precison | Recall | F1 | 
 | --- | --- | --- | --- | --- |
